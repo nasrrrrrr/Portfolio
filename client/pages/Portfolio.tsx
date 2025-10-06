@@ -24,7 +24,7 @@ const featuredProjects = [
     detail: "Roblox • Game Development",
     tags: ["Roblox", "Game Dev", "Team Project"],
     accent: "from-primary/40 via-primary/20 to-transparent",
-    image: "/client/assets/agrumium_logo.png",
+    image: "/agrumium_logo.png",
     featured: true,
   },
   {
@@ -34,7 +34,7 @@ const featuredProjects = [
     detail: "Discord • Automation",
     tags: ["Discord API", "Python", "Automation"],
     accent: "from-accent/40 via-accent/20 to-transparent",
-    image: "/client/assets/discord.png",
+    image: "/discord.png",
   },
   {
     title: "Portfolio Website",
@@ -51,7 +51,7 @@ const featuredProjects = [
     detail: "3D • Assets",
     tags: ["3D Modeling", "Low Poly", "Game Dev"],
     accent: "from-accent/30 via-white/10 to-transparent",
-    image: "/client/assets/roblox-logo.png",
+    image: "/roblox-logo.png",
   },
 ];
 
@@ -227,7 +227,7 @@ const HeroSection = () => {
           </h2>
           <div className="flex justify-center">
             <img
-              src="/client/assets/agrumium_logo.png"
+              src="/agrumium_logo.png"
               alt="Agrumium Logo"
               className="w-24 h-24 object-contain rounded-2xl bg-white/10 p-4"
             />
@@ -251,7 +251,7 @@ const HeroSection = () => {
           transition={{ repeat: Infinity, duration: 5.5, ease: "easeInOut" }}
         >
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-foreground text-background text-lg font-semibold">
-            <img src="/client/assets/nsr.png" alt="Nasr" className="w-full h-full rounded-full object-cover" />
+            <img src="/nsr.png" alt="Nasr" className="w-full h-full rounded-full object-cover" />
           </div>
           <div>
             <p className="text-sm font-medium text-foreground">Booking new coding and art work for 2024.</p>

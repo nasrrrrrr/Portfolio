@@ -22,7 +22,7 @@ const featuredProjects = [
     detail: "Roblox • Game Development",
     tags: ["Roblox", "Game Dev", "Team Project"],
     accent: "from-primary/30 via-primary/10 to-transparent",
-    image: "/client/assets/agrumium_logo.png",
+    image: "/agrumium_logo.png",
     link: "https://www.roblox.com/communities/35578337/Agrumium#!/about",
   },
   {
@@ -42,7 +42,7 @@ const featuredProjects = [
     detail: "Discord • Bot Development",
     tags: ["AI Integration", "Moderation", "Raid Protection"],
     accent: "from-accent/40 via-white/10 to-transparent",
-    image: "/client/assets/Untitled design.png",
+    image: "/Untitled design.png",
     link: "https://discord.gg/EYpJFNeyQ4",
   },
 ];
@@ -94,25 +94,25 @@ const contactPoints = [
     label: "Discord",
     value: "Message me directly",
     href: "https://discord.com/users/1308117682259759205",
-    image: "/client/assets/discord.png",
+    image: "/discord.png",
   },
   {
     label: "Roblox Profile",
     value: "Check out my games",
     href: "https://www.roblox.com/users/2760340076/profile",
-    image: "/client/assets/roblox-logo.png",
+    image: "/roblox-logo.png",
   },
   {
     label: "Agrumium Discord",
     value: "Join our community",
     href: "https://discord.gg/EYpJFNeyQ4",
-    image: "/client/assets/agrumium_logo.png",
+    image: "/agrumium_logo.png",
   },
   {
     label: "Agrumium Group",
     value: "Our Roblox group",
     href: "https://www.roblox.com/communities/35578337/Agrumium#!/about",
-    image: "/client/assets/roblox-agrumium.png",
+    image: "/roblox-agrumium.png",
   },
 ];
 
@@ -239,11 +239,11 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <img
-                  src="/client/assets/agrumium_logo.png"
-                  alt="Agrumium Logo"
-                  className="w-20 h-20 object-contain rounded-2xl bg-gradient-to-br from-white/10 to-white/5 p-4 shadow-lg"
-                />
+              <img
+                src="/agrumium_logo.png"
+                alt="Agrumium Logo"
+                className="w-20 h-20 object-contain rounded-2xl bg-gradient-to-br from-white/10 to-white/5 p-4 shadow-lg"
+              />
                 <div className="absolute inset-0 rounded-2xl bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
             </div>
