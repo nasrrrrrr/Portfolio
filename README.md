@@ -79,6 +79,10 @@ This portfolio is optimized for deployment on:
 
 This project is open source and available under the [MIT License](LICENSE).
 
+## ✏️ Changes
+
+U are allowed to modify this code and to set up your own portfolio. 
+
 ---
 
 ⭐ Star this repo if you like it!
