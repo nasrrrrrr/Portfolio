@@ -1,0 +1,140 @@
+/** @import must precede all other statements */
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+@layer base {
+  :root {
+    --background: 227 56% 95%;
+    --foreground: 232 40% 14%;
+
+    --card: 227 58% 99%;
+    --card-foreground: 232 40% 14%;
+
+    --popover: 227 58% 99%;
+    --popover-foreground: 232 40% 14%;
+
+    --primary: 230 92% 62%;
+    --primary-foreground: 230 100% 14%;
+
+    --secondary: 228 38% 88%;
+    --secondary-foreground: 232 40% 14%;
+
+    --muted: 229 32% 86%;
+    --muted-foreground: 232 32% 38%;
+
+    --accent: 268 78% 72%;
+    --accent-foreground: 232 100% 14%;
+
+    --destructive: 0 74% 58%;
+    --destructive-foreground: 227 58% 98%;
+
+    --border: 229 28% 84%;
+    --input: 229 28% 84%;
+    --ring: 230 92% 62%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 227 56% 95%;
+    --sidebar-foreground: 232 40% 14%;
+    --sidebar-primary: 230 92% 62%;
+    --sidebar-primary-foreground: 230 100% 14%;
+    --sidebar-accent: 228 38% 88%;
+    --sidebar-accent-foreground: 232 40% 14%;
+    --sidebar-border: 229 28% 84%;
+    --sidebar-ring: 230 92% 62%;
+
+    color-scheme: light;
+  }
+
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica,
+      Arial, sans-serif;
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+    font-feature-settings: "liga" 1, "kern" 1;
+    letter-spacing: -0.01em;
+    position: relative;
+    overflow-x: hidden;
+    background-image: radial-gradient(
+        circle at 12% 18%,
+        rgba(92, 112, 255, 0.35),
+        transparent 58%
+      ),
+      radial-gradient(
+        circle at 88% -10%,
+        rgba(120, 78, 255, 0.32),
+        transparent 65%
+      ),
+      linear-gradient(
+        rgba(22, 28, 48, 0.24) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        rgba(22, 28, 48, 0.24) 1px,
+        transparent 1px
+      );
+    background-size: 100% 100%, 100% 100%, 160px 160px, 160px 160px;
+    background-attachment: fixed;
+  }
+
+
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      circle at 18% 22%,
+      rgba(125, 88, 255, 0.3),
+      transparent 55%
+    );
+    opacity: 0.7;
+    mix-blend-mode: screen;
+    z-index: -1;
+  }
+
+
+
+  ::selection {
+    background-color: hsl(var(--primary) / 0.35);
+    color: hsl(var(--primary-foreground));
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 150ms ease, opacity 150ms ease;
+  }
+
+  a:hover {
+    color: hsl(var(--primary));
+  }
+}
