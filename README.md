@@ -37,7 +37,7 @@ A modern, responsive portfolio website showcasing my work as a developer and 3D 
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/portfolio.git
+git clone https://github.com/nasrrrrrr/portfolio.git
 
 # Navigate to project directory
 cd portfolio
