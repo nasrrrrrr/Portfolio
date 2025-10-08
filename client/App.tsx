@@ -23,7 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<SiteLayout><Index /></SiteLayout>} />
           <Route path="/portfolio" element={<SiteLayout><Portfolio /></SiteLayout>} />
-          {/* Keep new routes above the 404 catch-all */}
+          {/* keep new routes above the 404 catch-all */}
           <Route path="*" element={<SiteLayout><NotFound /></SiteLayout>} />
         </Routes>
       </BrowserRouter>
