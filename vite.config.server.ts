@@ -38,7 +38,7 @@ export default defineConfig({
         entryFileNames: "[name].mjs",
       },
     },
-    minify: false, // Keep readable for debugging
+    minify: false, // keep readable for easy debugging
     sourcemap: true,
   },
   resolve: {
