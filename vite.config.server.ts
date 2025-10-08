@@ -29,7 +29,7 @@ export default defineConfig({
         "buffer",
         "querystring",
         "child_process",
-        // External dependencies that should not be bundled
+        // external dependencies that aren't bundeld
         "express",
         "cors",
       ],
