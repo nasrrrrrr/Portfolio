@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import path from "path";
 
-// Server build configuration
+// server build configuration
 export default defineConfig({
   build: {
     lib: {
